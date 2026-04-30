@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 220" width="500" height="220">
+  <!-- Water background shape -->
+  <ellipse cx="250" cy="155" rx="200" ry="50" fill="#1a6b8a" opacity="0.2"/>
+  
+  <!-- Pine trees left -->
+  <polygon points="40,100 52,60 64,100" fill="#2d5a27"/>
+  <polygon points="40,82 52,48 64,82" fill="#3a7a32"/>
+  <polygon points="22,100 34,65 46,100" fill="#2d5a27"/>
+  <polygon points="22,84 34,54 46,84" fill="#3a7a32"/>
+  
+  <!-- Pine trees right -->
+  <polygon points="436,100 448,60 460,100" fill="#2d5a27"/>
+  <polygon points="436,82 448,48 460,82" fill="#3a7a32"/>
+  <polygon points="454,100 466,65 478,100" fill="#2d5a27"/>
+  <polygon points="454,84 466,54 478,84" fill="#3a7a32"/>
+  
+  <!-- Sun -->
+  <circle cx="250" cy="32" r="22" fill="#f4a300" opacity="0.9"/>
+  
+  <!-- Fish jumping -->
+  <path d="M 380 95 Q 392 78 404 95 Q 398 92 392 96 Z" fill="#4a90a4"/>
+  
+  <!-- Main text: "LAKE HARTWELL" with L flipped to look like F -->
+  <!-- The flipped L: rotate 180 degrees around its own center, keeping it on the baseline -->
+  <text x="82" y="130" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#1a3d5c" transform="rotate(180, 93, 116)">L</text>
+  
+  <!-- "AKE" -->
+  <text x="104" y="130" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#1a3d5c">AKE</text>
+  
+  <!-- Space then "HARTWELL" -->
+  <text x="200" y="130" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#1a3d5c">HARTWELL</text>
+  
+  <!-- Tagline -->
+  <text x="250" y="158" font-family="Georgia, serif" font-size="13" fill="#4a6741" text-anchor="middle" font-style="italic">Fewer bodies than Lanier</text>
+  
+  <!-- Water ripples -->
+  <path d="M 80 185 Q 130 179 180 185 Q 230 191 280 185 Q 330 179 380 185 Q 410 191 440 185" fill="none" stroke="#1a6b8a" stroke-width="1.5" opacity="0.5"/>
+  <path d="M 100 196 Q 150 190 200 196 Q 250 202 300 196 Q 350 190 400 196" fill="none" stroke="#1a6b8a" stroke-width="1" opacity="0.35"/>
+</svg>

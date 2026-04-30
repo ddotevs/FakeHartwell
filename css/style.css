@@ -1,0 +1,281 @@
+/* FakeHartwell - Lake Parody Site */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --lake-dark: #1a3d5c;
+  --lake-mid: #1a6b8a;
+  --lake-light: #4a90a4;
+  --forest: #2d5a27;
+  --forest-light: #4a6741;
+  --sand: #f5e6c8;
+  --sunset: #f4a300;
+  --white: #ffffff;
+  --off-white: #fafaf7;
+  --text: #2c2c2c;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  color: var(--text);
+  background: var(--off-white);
+  line-height: 1.7;
+}
+
+/* Navigation */
+nav {
+  background: var(--lake-dark);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo-text {
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav .nav-links a {
+  color: var(--sand);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+  color: var(--sunset);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--white);
+  border-radius: 2px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--lake-dark) 0%, var(--lake-mid) 50%, var(--forest) 100%);
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--white);
+}
+
+.hero img.logo {
+  max-width: 350px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .tagline {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--sand);
+  margin-bottom: 2rem;
+}
+
+.hero .cta-btn {
+  display: inline-block;
+  background: var(--sunset);
+  color: var(--lake-dark);
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hero .cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(244, 163, 0, 0.4);
+}
+
+/* Content Sections */
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: var(--lake-dark);
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid var(--lake-light);
+  padding-bottom: 0.5rem;
+}
+
+.section p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-left: 4px solid var(--lake-light);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  color: var(--lake-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.card .subtitle {
+  color: var(--forest-light);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Store Section */
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.store-item {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.store-item:hover {
+  transform: translateY(-3px);
+}
+
+.store-item .icon {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.store-item h3 {
+  color: var(--lake-dark);
+  margin-bottom: 0.5rem;
+}
+
+.store-item a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  background: var(--lake-mid);
+  color: var(--white);
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.store-item a:hover {
+  background: var(--lake-dark);
+}
+
+/* Footer */
+footer {
+  background: var(--lake-dark);
+  color: var(--sand);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: var(--sunset);
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  nav .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--lake-dark);
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 1rem;
+  }
+
+  nav .nav-links.active {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero .tagline {
+    font-size: 1.1rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}

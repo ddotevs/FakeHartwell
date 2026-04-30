@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  fakehartwell:
+    build: .
+    container_name: fakehartwell
+    ports:
+      - "8080:80"
+    restart: unless-stopped
