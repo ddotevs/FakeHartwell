@@ -20,9 +20,9 @@
   <!-- Fish jumping -->
   <path d="M 380 95 Q 392 78 404 95 Q 398 92 392 96 Z" fill="#4a90a4"/>
   
-  <!-- Main text: "LAKE HARTWELL" with L flipped to look like F -->
-  <!-- The flipped L: rotate 180 degrees around its own center, keeping it on the baseline -->
-  <text x="82" y="130" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#1a3d5c" transform="rotate(180, 93, 116)">L</text>
+  <!-- Main text: "LAKE HARTWELL" with L flipped vertically to look like F -->
+  <!-- Flip L upside-down: translate to origin, flip Y, translate back to baseline -->
+  <text font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#1a3d5c" transform="translate(82, 130) scale(1, -1) translate(0, -28)">L</text>
   
   <!-- "AKE" -->
   <text x="104" y="130" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#1a3d5c">AKE</text>
