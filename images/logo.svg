@@ -21,14 +21,15 @@
   <path d="M 380 95 Q 392 78 404 95 Q 398 92 392 96 Z" fill="#4a90a4"/>
   
   <!-- Main text: "LAKE HARTWELL" with L flipped vertically to look like F -->
-  <!-- Flip L upside-down: translate to origin, flip Y, translate back to baseline -->
-  <text font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#1a3d5c" transform="translate(82, 130) scale(1, -1) translate(0, -28)">L</text>
-  
+  <!-- Flip L upside-down, larger font, adjusted Y for alignment -->
+  <text font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#1a3d5c" x="74" y="130" transform="scale(1,-1) translate(0, -244)">L</text>
+
   <!-- "AKE" -->
-  <text x="104" y="130" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#1a3d5c">AKE</text>
+  <text x="106" y="130" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#1a3d5c">AKE</text>
   
-  <!-- Space then "HARTWELL" -->
-  <text x="200" y="130" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#1a3d5c">HARTWELL</text>
+  <!-- Space then "HARTWELL" with larger H, more gap before ARTWELL -->
+  <text x="200" y="130" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#1a3d5c">H</text>
+  <text x="248" y="130" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#1a3d5c">ARTWELL</text>
   
   <!-- Tagline -->
   <text x="250" y="158" font-family="Georgia, serif" font-size="13" fill="#4a6741" text-anchor="middle" font-style="italic">Fewer bodies than Lanier</text>
